@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "scripts": {
     "build": "next build",
     "check": "next lint && tsc --noEmit",
@@ -18,16 +21,18 @@
     "lint:fix": "next lint --fix",
     "preview": "next build && next start",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seed": "prisma db seed"
   },
   "dependencies": {
-    "@prisma/client": "^6.5.0",
+    "@prisma/client": "6.16.2",
     "@t3-oss/env-nextjs": "^0.12.0",
     "@tanstack/react-query": "^5.69.0",
     "@trpc/client": "^11.0.0",
     "@trpc/next": "^11.0.0",
     "@trpc/react-query": "^11.0.0",
     "@trpc/server": "^11.0.0",
+    "csv-parse": "6.1.0",
     "next": "^15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -36,13 +41,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@types/node": "^20.14.10",
+    "@types/node": "20.19.17",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.23.0",
     "eslint-config-next": "^15.2.3",
     "prettier": "^3.5.3",
-    "prisma": "^6.5.0",
+    "prisma": "6.16.2",
+    "tsx": "4.20.5",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.27.0"
   },
