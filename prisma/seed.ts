@@ -16,13 +16,13 @@ const CSV_PATH = path.resolve(
 );
 
 // Normalizador opcional: remove acentos e deixa minúsculo
-function normalize(str: string) {
-  return str
-    ?.normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .trim();
-}
+// function normalize(str: string) {
+//   return str
+//     ?.normalize("NFD")
+//     .replace(/\p{Diacritic}/gu, "")
+//     .toLowerCase()
+//     .trim();
+// }
 
 // Tipagem das colunas do CSV
 type Row = {
