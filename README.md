@@ -11,7 +11,8 @@ cidade.
 
 ## 📸 Demonstração
 
-> *(adicione aqui uma captura de tela da aplicação rodando)*
+<img width="898" height="570" alt="image" src="https://github.com/user-attachments/assets/4a9b0727-9ef1-4c93-be5c-09d3c8b56cd7" />
+
 
 ------------------------------------------------------------------------
 
