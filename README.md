@@ -125,16 +125,3 @@ npm run seed       # Executar seed das cidades
 
 ------------------------------------------------------------------------
 
-## ✨ Melhorias Futuras
-
--   Paginação ou scroll infinito nas opções do autocomplete
--   Filtro por país ou região
--   Adição de testes unitários e e2e
--   Deploy em plataformas como Vercel ou Railway
-
-------------------------------------------------------------------------
-
-## 📄 Licença
-
-Este projeto é de uso educacional e demonstração.\
-Sinta-se à vontade para usar e adaptar conforme necessário.
