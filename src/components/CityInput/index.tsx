@@ -1,6 +1,5 @@
-// AI Assist: componente CityInput com debounce interno (sem hook)
 import React, { useRef, useState } from "react";
-
+import styles from "./index.module.css";
 type Option = { id: string; city: string; country: string };
 
 type Props = {
@@ -41,43 +40,27 @@ export default function CityInput({
     setOpen(false);
   }
   return (
-    <div style={{ width, maxWidth: 420, margin: "0 auto" }}>
+    <div className={styles.container} style={{ width: width }}>
       <input
+        className={styles.input}
         value={value}
         defaultValue={value}
         onChange={handleChange}
         placeholder="Digite a cidade..."
         style={{
-          padding: 10,
           width: width,
-          borderRadius: 8,
-          background: "#121114",
-          color: "#EAEAEA",
-          border: "1px solid #3d3c3c",
         }}
       />
 
       {open && options.length > 0 && (
-        <ul
-          style={{
-            marginTop: 6,
-            padding: 0,
-            borderRadius: 8,
-            background: "#121114",
-          }}
-        >
+        <ul className={styles.ul}>
           {options.map((o) => (
             <li key={o.id} style={{ listStyle: "none" }}>
               <button
+                className={styles.button}
                 onClick={() => handleSelect(o.id, o.city)}
                 style={{
                   width: width,
-                  textAlign: "left",
-                  background: "transparent",
-                  border: "none",
-                  padding: 8,
-                  cursor: "pointer",
-                  color: "#EAEAEA",
                 }}
               >
                 {o.city} — {o.country}

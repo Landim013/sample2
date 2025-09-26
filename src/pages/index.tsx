@@ -94,13 +94,24 @@ export default function Home() {
 
           {city && (
             <div className={styles.containerInformation}>
-              <span className={styles.country}>{city.city}</span>
+              <span className={styles.country}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                </svg>
+                {city.city}
+              </span>
               <span className={styles.information}>País: {city.country}</span>
               <span className={styles.information}>
                 Estado/Prov.: {city.admin_name ?? "—"}
               </span>
               <span className={styles.information}>
-                Coords: {city.lat}, {city.lng}
+                Coordenadas: {city.lat}, {city.lng}
               </span>
               <span className={styles.information}>
                 População: {city.population ?? "—"}

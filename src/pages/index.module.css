@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, #090114, #0f101b);
+  background-image: linear-gradient(to bottom, #1a191d, #0e123d);
   width: 100%;
 }
 
@@ -20,7 +20,7 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 26px;
+    font-size: 32px;
   }
 }
 
@@ -51,4 +51,8 @@
 .country {
   color: #eaeaea;
   font-weight: bold;
+  display: flex;
+  gap: 4px;
+  margin-left: -4px;
+  margin-bottom: 4px;
 }
